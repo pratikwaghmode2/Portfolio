@@ -94,7 +94,7 @@ export default function Blog() {
                         {post.id === "last-day-accenture" && (
                           <div className="relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden border border-slate-200/50 dark:border-slate-800/80 mt-4">
                             <Image
-                              src="/blog/accenture_2.jpg"
+                              src="/Portfolio/blog/accenture_2.jpg"
                               alt="Accenture Farewell Memories"
                               fill
                               className="object-cover"

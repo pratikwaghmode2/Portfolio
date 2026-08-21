@@ -103,10 +103,10 @@ export const portfolioDataEn: PortfolioData = {
     email: "pratikwaghmode.ms@gmail.com",
     github: "https://github.com/pratikwaghmode2",
     linkedin: "https://www.linkedin.com/in/pratik-waghmode-84ba671b5/",
-    profileImage: "/profile.png",
-    resumeUrl: "/Pratik_Waghmode_Resume.pdf",
+    profileImage: "/Portfolio/profile.png",
+    resumeUrl: "/Portfolio/Pratik_Waghmode_Resume.pdf",
     website: "https://pratikwaghmode.com",
-    certificationsPdfUrl: "/certifications_all.pdf",
+    certificationsPdfUrl: "/Portfolio/certifications_all.pdf",
     formspreeId: "maewknak",
   },
   experience: [
@@ -336,7 +336,7 @@ export const portfolioDataEn: PortfolioData = {
       category: "ML Research & Internship",
       excerpt: "The story behind starting my Machine Learning internship (praktikum) at IAB Germany—overcoming rejections, apartment hunts, and bureaucracy.",
       content: "Securing a Machine Learning internship (praktikum) at the Institute for Employment Research (IAB) in Nuremberg—one of Germany's greatest and most prestigious research institutes—was a journey of pure resilience.\n\nRelocating to Germany brought a series of intense challenges. I spent months shifting from one temporary apartment to another before finally securing a permanent, long-term accommodation. Alongside the housing hunt, I had to navigate the infamous German bureaucracy, learn a new language, and adapt to a completely different cultural and academic atmosphere.\n\nAt the same time, finding an internship was an uphill battle. After applying to countless positions, my mailbox was filled with rejections, which tested my confidence and self-belief. But this one positive response from IAB changed everything. It gave me renewed hope in my skills and my path.\n\nNow, at IAB, I am analyzing labor market datasets and building predictive machine learning models to help forecast employment trends. This journey has shown me that persistence, adaptability, and resilience are just as important as technical skills. I am excited to see what the future holds here in Germany!",
-      imageUrl: "/blog/iab.jpg"
+      imageUrl: "/Portfolio/blog/iab.jpg"
     },
     {
       id: "masters-journey",
@@ -346,7 +346,7 @@ export const portfolioDataEn: PortfolioData = {
       category: "Academia & Robotics",
       excerpt: "A major career milestone: starting my Master's journey in Germany to specialize in AI, sensor fusion, and autonomous navigation.",
       content: "I am thrilled to share a major update in my professional and academic journey: I have officially started my Master of Science in Intelligent and Autonomous Systems at Technische Hochschule Nürnberg Georg Simon Ohm in Germany!\n\nTransitioning from my role as a Data Engineer at Accenture where I focused on cloud data warehousing, ETL pipelines, and BigQuery optimization, this program allows me to bridge the gap between large-scale data engineering and embodied physical intelligence. The curriculum focuses heavily on areas I am deeply passionate about, including Autonomous Navigation Systems, AI Hardware Accelerators, and Statistics for Machine Learning.\n\nAlongside my studies, I am collaborating with TH Nürnberg and Klinikum Nürnberg to develop an Autonomous Patient Escort Robot using LiDAR, depth cameras, and ROS. I look forward to sharing more updates as I build out autonomous systems, integrate LiDAR/camera sensors, and solve complex real-world data engineering challenges!",
-      imageUrl: "/blog/masters-journey.jpg"
+      imageUrl: "/Portfolio/blog/masters-journey.jpg"
     },
     {
       id: "last-day-accenture",
@@ -356,7 +356,7 @@ export const portfolioDataEn: PortfolioData = {
       category: "Career Journey",
       excerpt: "Grateful for the journey: summarizing my 2.9 years at Accenture, transitioning from training to cloud systems engineering.",
       content: "Today was my last working day at Accenture in India!\n\nI originally joined the company in July 2023, starting out with intensive training in PL/SQL and database mechanics. Soon after, I got the opportunity to move onto real-world client projects as a Data Engineer, designing and optimizing ETL pipelines using Google Cloud Platform, BigQuery, and Python.\n\nAlong the way, I learned not just hard technical skills like database index optimization and scripting, but also how end-to-end software project lifecycles work—from gathering business requirements to building, testing, deploying, and supporting enterprise applications.\n\nGrateful for the incredible mentors, teammates, and friends I made at Accenture in India. This experience has built a strong foundation for my next journey!\n\nExcited for what's next, but I'll always be an Accenture alumnus at heart. Let's stay in touch!\n\n✨ #ContinuousLearning 🤝 #GreatPeople 🌍 #Impact 💡 #AppliedIntelligence #Accenture #Dataengineer #BigQuery #Python #Cloud #CareerJourney #NewBeginnings #Consulting #Learning #Growth",
-      imageUrl: "/blog/accenture_1.jpg"
+      imageUrl: "/Portfolio/blog/accenture_1.jpg"
     }
   ]
 };
@@ -370,10 +370,10 @@ export const portfolioDataDe: PortfolioData = {
     email: "pratikwaghmode.ms@gmail.com",
     github: "https://github.com/pratikwaghmode2",
     linkedin: "https://www.linkedin.com/in/pratik-waghmode-84ba671b5/",
-    profileImage: "/profile.png",
-    resumeUrl: "/Pratik_Waghmode_Resume.pdf",
+    profileImage: "/Portfolio/profile.png",
+    resumeUrl: "/Portfolio/Pratik_Waghmode_Resume.pdf",
     website: "https://pratikwaghmode.com",
-    certificationsPdfUrl: "/certifications_all.pdf",
+    certificationsPdfUrl: "/Portfolio/certifications_all.pdf",
     formspreeId: "maewknak",
   },
   experience: [
@@ -603,7 +603,7 @@ export const portfolioDataDe: PortfolioData = {
       category: "ML-Forschung & Praktikum",
       excerpt: "Die Geschichte hinter meinem Start als ML-Praktikant beim IAB Deutschland – über die Bewältigung von Wohnungssuche, Bürokratie und Absagen.",
       content: "Ein Praktikum im Bereich Maschinelles Lernen am Institut für Arbeitsmarkt- und Berufsforschung (IAB) in Nürnberg – einer der angesehensten Forschungseinrichtungen Deutschlands – zu ergattern, war ein Weg voller Durchhaltevermögen.\n\nDer Umzug nach Deutschland brachte viele Hürden mit sich. Ich verbrachte Monate damit, von einer temporären Unterkunft zur nächsten zu ziehen, bis ich endlich eine langfristige Wohnung fand. Parallel dazu musste ich mich durch die deutsche Bürokratie kämpfen, eine neue Sprache lernen und mich an eine völlig neue akademische und kulturelle Umgebung anpassen.\n\nGleichzeitig war die Praktikumssuche eine echte Herausforderung. Nach unzähligen Bewerbungen war mein Postfach voller Absagen, was mein Selbstvertrauen auf die Probe stellte. Doch die eine positive Zusage des IAB änderte alles und gab mir den Glauben an meine Fähigkeiten zurück.\n\nHeute analysiere ich beim IAB große Arbeitsmarktdatensätze und entwickle ML-Modelle für Beschäftigungsprognosen. Diese Reise hat mir gezeigt, dass Ausdauer und Anpassungsfähigkeit genauso wichtig sind wie technisches Know-how. Ich freue mich auf die kommenden Aufgaben in Deutschland!",
-      imageUrl: "/blog/iab.jpg"
+      imageUrl: "/Portfolio/blog/iab.jpg"
     },
     {
       id: "masters-journey",
@@ -613,7 +613,7 @@ export const portfolioDataDe: PortfolioData = {
       category: "Akademik & Robotik",
       excerpt: "Ein wichtiger Meilenstein: Beginn meines Masterstudiums in Deutschland mit den Schwerpunkten KI, Sensorfusion und autonome Navigation.",
       content: "Ich freue mich sehr, einen wichtigen akademischen Schritt zu teilen: Ich habe mein Masterstudium in Intelligent and Autonomous Systems an der Technischen Hochschule Nürnberg Georg Simon Ohm begonnen!\n\nNach meiner Zeit als Data Engineer bei Accenture, wo ich mich auf Cloud-Datenverarbeitung, ETL-Pipelines und BigQuery-Optimierungen konzentriert habe, ermöglicht mir dieses Studium die Verbindung von Big Data mit physischer Intelligenz. Die Vorlesungen decken spannende Bereiche wie Autonome Navigationssysteme, KI-Hardwarebeschleuniger und Statistik für maschinelles Lernen ab.\n\nZudem arbeite ich an der TH Nürnberg in Kooperation mit dem Klinikum Nürnberg an einem autonomen Patiententransport-Roboter auf Basis von LiDAR, Tiefenkameras und ROS. Ich freue mich darauf, meine Fortschritte beim Bau autonomer Systeme und der Lösung komplexer Datenprobleme weiter zu teilen!",
-      imageUrl: "/blog/masters-journey.jpg"
+      imageUrl: "/Portfolio/blog/masters-journey.jpg"
     },
     {
       id: "last-day-accenture",
@@ -623,7 +623,7 @@ export const portfolioDataDe: PortfolioData = {
       category: "Karriereweg",
       excerpt: "Dankbar für die Reise: Zusammenfassung meiner 2,9 Jahre bei Accenture, vom PL/SQL-Training bis zur Cloud-Datenverarbeitung.",
       content: "Heute war mein letzter Arbeitstag bei Accenture in India!\n\nIm Juli 2023 begann meine Zeit dort mit einem intensiven Training in PL/SQL und Datenbankarchitektur. Kurz darauf bekam ich die Chance, als Data Engineer an echten Kundenprojekten mitzuwirken und ETL-Pipelines auf der Google Cloud Platform mit BigQuery und Python zu entwickeln.\n\nDabei habe ich nicht nur technische Fähigkeiten wie Datenbankoptimierung gelernt, sondern auch den gesamten Software-Lebenszyklus verstanden – von der Anforderungserhebung über Entwicklung, Testen und Deployment bis hin zum Support.\n\nIch bin meinen Mentoren, Kollegen und Freunden bei Accenture in Indien unglaublich dankbar. Diese Erfahrung bildet ein starkes Fundament für meinen weiteren Weg!\n\nIch bin gespannt auf das nächste Kapitel, werde Accenture im Herzen aber immer verbunden bleiben. Lasst uns in Kontakt bleiben!\n\n✨ #ContinuousLearning 🤝 #GreatPeople 🌍 #Impact 💡 #AppliedIntelligence #Accenture #Dataengineer #BigQuery #Python #Cloud #CareerJourney #NewBeginnings #Consulting #Learning #Growth",
-      imageUrl: "/blog/accenture_1.jpg"
+      imageUrl: "/Portfolio/blog/accenture_1.jpg"
     }
   ]
 };
