@@ -1,26 +1,163 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-cyan: #0ea5e9;
+  --color-brand-purple: #8b5cf6;
+  --color-brand-emerald: #10b981;
+  --color-brand-blue: #3b82f6;
+  --font-sans: "Outfit", "Inter", system-ui, sans-serif;
+  --font-mono: "Fira Code", "Courier New", Courier, monospace;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --grid-color: rgba(14, 165, 233, 0.04);
+  --bg-dots: rgba(0, 0, 0, 0.05);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --grid-color: rgba(14, 165, 233, 0.07);
+  --bg-dots: rgba(255, 255, 255, 0.05);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom utilities & premium scrollbar */
+@layer base {
+  * {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    @apply antialiased text-slate-800 bg-slate-50 dark:text-slate-100 dark:bg-[#07090e];
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100 dark:bg-[#0b0e14];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 dark:bg-slate-800 rounded-full hover:bg-slate-400 dark:hover:bg-slate-700;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Background Grids & Animations */
+.tech-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+}
+
+.dot-pattern {
+  background-image: radial-gradient(var(--bg-dots) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.scanline-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanline-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(14, 165, 233, 0.08) 50%,
+    transparent 100%
+  );
+  animation: scanline 8s linear infinite;
+  pointer-events: none;
+}
+
+/* Glowing text effects */
+.glow-text-cyan {
+  text-shadow: 0 0 12px rgba(14, 165, 233, 0.4);
+}
+.glow-text-purple {
+  text-shadow: 0 0 12px rgba(139, 92, 246, 0.4);
+}
+
+/* Custom animation classes */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Glassmorphism utility */
+.glass {
+  @apply bg-white/70 dark:bg-[#0c101b]/70 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50;
+}
+
+.glass-premium {
+  @apply bg-white/85 dark:bg-[#0e1424]/85 backdrop-blur-lg border border-slate-200/80 dark:border-slate-800/80 shadow-xl;
+}
+
+/* Spark/Stream Particles animation for telemetry context */
+@keyframes data-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-data-stream {
+  background: linear-gradient(90deg, #0ea5e9, #8b5cf6, #10b981, #0ea5e9);
+  background-size: 300% 300%;
+  animation: data-flow 12s ease infinite;
 }
