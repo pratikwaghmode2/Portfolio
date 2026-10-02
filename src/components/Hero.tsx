@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "@/context/ThemeContext";
 import { useLanguage } from "@/context/LanguageContext";
 import LanguageToggle from "./LanguageToggle";
-import TelemetryCard from "./TelemetryCard";
 import ResumeModal from "./ResumeModal";
 
 const GithubIcon = ({ className }: { className?: string }) => (
@@ -265,10 +264,7 @@ export default function Hero() {
 
       </div>
 
-      {/* Telemetry card at the bottom of hero */}
-      <div className="w-full max-w-6xl mt-16 md:mt-24 z-15">
-        <TelemetryCard />
-      </div>
+
 
       <ResumeModal
         isOpen={isResumeOpen}

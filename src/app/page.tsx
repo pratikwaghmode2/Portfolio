@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "@/components/Hero";
-import PipelineDag from "@/components/PipelineDag";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Certifications from "@/components/Certifications";
@@ -15,22 +14,11 @@ export default function Home() {
       {/* Background data-stream ambient accents */}
       <div className="absolute top-0 right-0 w-full h-[500px] bg-gradient-to-b from-brand-cyan/5 to-transparent pointer-events-none z-0" />
       
-      {/* Hero Section (Includes Profile, Bio, Contact, Resume, Telemetry Card) */}
+      {/* Hero Section (Includes Profile, Bio, Contact, Resume) */}
       <Hero />
 
       {/* Main Container */}
       <main className="flex-1 w-full max-w-6xl mx-auto px-6 py-12 relative z-10 space-y-16">
-        
-        {/* Pipeline DAG Showcase */}
-        <section id="pipeline-dag" className="w-full pt-8">
-          <div className="flex flex-col items-center justify-center text-center mb-8">
-            <h2 className="text-2xl font-extrabold tracking-tight text-slate-905 dark:text-white sm:text-3xl">
-              System Architecture Flow
-            </h2>
-            <div className="h-1 w-16 bg-brand-cyan rounded mt-2.5" />
-          </div>
-          <PipelineDag />
-        </section>
 
         {/* Experience Section (Work Experience & Education Tabbed Timeline) */}
         <Experience />
