@@ -27,6 +27,7 @@ export interface BlogPost {
   excerpt: string;
   content: string;
   imageUrl: string;
+  secondaryImageUrl?: string;
 }
 
 export interface Experience {
@@ -261,6 +262,15 @@ export const portfolioDataEn: PortfolioData = {
   ],
   achievements: [
     {
+      id: "tesla-challenge",
+      highlight: "1st Place",
+      category: "Tesla Challenge",
+      title: "1st Place Winner – Tesla Challenge (Tech at WHU)",
+      issuer: "Tesla & Business Meets Tech (WHU)",
+      date: "Oct 2026",
+      description: "Developed 'Airframe', an operations concept solving mission-critical manufacturing bottlenecks for Tesla's Gigafactory Berlin, winning 1st place and €2,000 prize."
+    },
+    {
       id: "fabric",
       highlight: "Fabric Analytics",
       category: "Credentials",
@@ -329,6 +339,17 @@ export const portfolioDataEn: PortfolioData = {
   ],
   blogPosts: [
     {
+      id: "tesla-challenge",
+      title: "1st Place in the Tesla Challenge at Business Meets Tech (WHU)",
+      date: "October 2026",
+      readTime: "3 min read",
+      category: "Hackathon & Innovation",
+      excerpt: "Grateful to share that our team took 1st place in the Tesla Challenge at Business Meets Tech – Tech at WHU, developing 'Airframe' to solve operational bottlenecks for Tesla's Gigafactory Berlin.",
+      content: "Grateful to share that our team took 1st place in the Tesla Challenge at Business Meets Tech – Tech at WHU! 🏆⚡\n\nOur team developed Airframe, a concept focused on solving operational bottlenecks for Tesla's Gigafactory Berlin. Diving into what it takes to keep mission-critical systems seamless at that kind of manufacturing scale was an invaluable engineering and operations experience.\n\nA special shoutout to Ashutosh Chatterjee—his strategic vision and planning from the very beginning anchored our approach and gave us the clarity we needed to win this.\n\nBig thanks as well to Alexis Abel and Paul Alvermann for bringing the business perspective to the table and rounding out the sprint with precision.\n\nHuge appreciation to Lucas Viesel and the Tesla team for presenting such an exciting challenge, and to the Business Meets Tech – Tech at WHU team for organizing an outstanding event.\n\nCheers to the team! 🥂🚀\n#BusinessMeetsTech #Tesla #GigafactoryBerlin #Innovation",
+      imageUrl: "/Portfolio/blog/tesla_1.jpg",
+      secondaryImageUrl: "/Portfolio/blog/tesla_2.jpg"
+    },
+    {
       id: "iab-internship",
       title: "Resilience in Relocation: Landing a Machine Learning Internship at IAB Germany",
       date: "August 2028",
@@ -356,7 +377,8 @@ export const portfolioDataEn: PortfolioData = {
       category: "Career Journey",
       excerpt: "Grateful for the journey: summarizing my 2.9 years at Accenture, transitioning from training to cloud systems engineering.",
       content: "Today was my last working day at Accenture in India!\n\nI originally joined the company in July 2023, starting out with intensive training in PL/SQL and database mechanics. Soon after, I got the opportunity to move onto real-world client projects as a Data Engineer, designing and optimizing ETL pipelines using Google Cloud Platform, BigQuery, and Python.\n\nAlong the way, I learned not just hard technical skills like database index optimization and scripting, but also how end-to-end software project lifecycles work—from gathering business requirements to building, testing, deploying, and supporting enterprise applications.\n\nGrateful for the incredible mentors, teammates, and friends I made at Accenture in India. This experience has built a strong foundation for my next journey!\n\nExcited for what's next, but I'll always be an Accenture alumnus at heart. Let's stay in touch!\n\n✨ #ContinuousLearning 🤝 #GreatPeople 🌍 #Impact 💡 #AppliedIntelligence #Accenture #Dataengineer #BigQuery #Python #Cloud #CareerJourney #NewBeginnings #Consulting #Learning #Growth",
-      imageUrl: "/Portfolio/blog/accenture_1.jpg"
+      imageUrl: "/Portfolio/blog/accenture_1.jpg",
+      secondaryImageUrl: "/Portfolio/blog/accenture_2.jpg"
     }
   ]
 };
@@ -528,6 +550,15 @@ export const portfolioDataDe: PortfolioData = {
   ],
   achievements: [
     {
+      id: "tesla-challenge",
+      highlight: "1. Platz",
+      category: "Tesla Challenge",
+      title: "1. Platz – Tesla Challenge (Tech at WHU)",
+      issuer: "Tesla & Business Meets Tech (WHU)",
+      date: "Okt 2026",
+      description: "Entwicklung von 'Airframe', einem Betriebskonzept zur Lösung betrieblicher Engpässe für die Tesla Gigafactory Berlin – 1. Platz und 2.000 € Preisgeld."
+    },
+    {
       id: "fabric",
       highlight: "Fabric Analytics",
       category: "Zertifikate",
@@ -596,6 +627,17 @@ export const portfolioDataDe: PortfolioData = {
   ],
   blogPosts: [
     {
+      id: "tesla-challenge",
+      title: "1. Platz bei der Tesla Challenge auf der Business Meets Tech (WHU)",
+      date: "Oktober 2026",
+      readTime: "3 Min. Lesezeit",
+      category: "Hackathon & Innovation",
+      excerpt: "Unser Team hat den 1. Platz bei der Tesla Challenge auf der Business Meets Tech – Tech at WHU gewonnen – mit dem Konzept 'Airframe' zur Behebung von Engpässen in der Tesla Gigafactory Berlin.",
+      content: "Ich freue mich sehr zu teilen, dass unser Team den 1. Platz bei der Tesla Challenge auf der Konferenz Business Meets Tech – Tech at WHU belegt hat! 🏆⚡\n\nUnser Team hat „Airframe“ entwickelt – ein operatives Konzept zur Lösung kritischer Engpässe in der Tesla Gigafactory Berlin. Zu analysieren, was nötig ist, um unternehmenskritische Systeme bei einer derartigen Fertigungsskalierung reibungslos am Laufen zu halten, war eine unschätzbare Erfahrung.\n\nEin besonderer Dank geht an Ashutosh Chatterjee – seine strategische Vision und strukturierte Planung von Beginn an gaben uns die nötige Klarheit für den Sieg.\n\nVielen Dank auch an Alexis Abel und Paul Alvermann, die die betriebswirtschaftliche Perspektive eingebracht und den Sprint perfekt abgerundet haben.\n\nGroße Anerkennung an Lucas Viesel und das gesamte Tesla-Team für diese spannende Aufgabenstellung sowie an das Team von Business Meets Tech / Tech at WHU für die Organisation eines fantastischen Events.\n\nEin Hoch auf das Team! 🥂🚀\n#BusinessMeetsTech #Tesla #GigafactoryBerlin #Innovation",
+      imageUrl: "/Portfolio/blog/tesla_1.jpg",
+      secondaryImageUrl: "/Portfolio/blog/tesla_2.jpg"
+    },
+    {
       id: "iab-internship",
       title: "Resilienz beim Umzug: Der Weg zum Machine-Learning-Praktikum beim IAB Deutschland",
       date: "August 2028",
@@ -623,7 +665,8 @@ export const portfolioDataDe: PortfolioData = {
       category: "Karriereweg",
       excerpt: "Dankbar für die Reise: Zusammenfassung meiner 2,9 Jahre bei Accenture, vom PL/SQL-Training bis zur Cloud-Datenverarbeitung.",
       content: "Heute war mein letzter Arbeitstag bei Accenture in India!\n\nIm Juli 2023 begann meine Zeit dort mit einem intensiven Training in PL/SQL und Datenbankarchitektur. Kurz darauf bekam ich die Chance, als Data Engineer an echten Kundenprojekten mitzuwirken und ETL-Pipelines auf der Google Cloud Platform mit BigQuery und Python zu entwickeln.\n\nDabei habe ich nicht nur technische Fähigkeiten wie Datenbankoptimierung gelernt, sondern auch den gesamten Software-Lebenszyklus verstanden – von der Anforderungserhebung über Entwicklung, Testen und Deployment bis hin zum Support.\n\nIch bin meinen Mentoren, Kollegen und Freunden bei Accenture in Indien unglaublich dankbar. Diese Erfahrung bildet ein starkes Fundament für meinen weiteren Weg!\n\nIch bin gespannt auf das nächste Kapitel, werde Accenture im Herzen aber immer verbunden bleiben. Lasst uns in Kontakt bleiben!\n\n✨ #ContinuousLearning 🤝 #GreatPeople 🌍 #Impact 💡 #AppliedIntelligence #Accenture #Dataengineer #BigQuery #Python #Cloud #CareerJourney #NewBeginnings #Consulting #Learning #Growth",
-      imageUrl: "/Portfolio/blog/accenture_1.jpg"
+      imageUrl: "/Portfolio/blog/accenture_1.jpg",
+      secondaryImageUrl: "/Portfolio/blog/accenture_2.jpg"
     }
   ]
 };
