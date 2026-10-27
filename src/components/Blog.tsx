@@ -102,6 +102,21 @@ export default function Blog() {
                             />
                           </div>
                         )}
+                        {post.galleryImages && post.galleryImages.length > 0 && (
+                          <div className="grid grid-cols-2 gap-3 mt-4">
+                            {post.galleryImages.map((img, i) => (
+                              <div key={i} className="relative w-full h-48 sm:h-56 rounded-xl overflow-hidden border border-slate-200/50 dark:border-slate-800/80">
+                                <Image
+                                  src={img}
+                                  alt={`${post.title} photo ${i + 2}`}
+                                  fill
+                                  className="object-cover hover:scale-105 transition-transform duration-500"
+                                  sizes="(max-width: 768px) 50vw, 300px"
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </motion.div>
                   )}

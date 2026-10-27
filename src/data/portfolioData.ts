@@ -28,6 +28,7 @@ export interface BlogPost {
   content: string;
   imageUrl: string;
   secondaryImageUrl?: string;
+  galleryImages?: string[];
 }
 
 export interface Experience {
@@ -262,6 +263,15 @@ export const portfolioDataEn: PortfolioData = {
   ],
   achievements: [
     {
+      id: "hack-apertus",
+      highlight: "1st Place",
+      category: "Hack Apertus",
+      title: "1st Place Winner – Hack Apertus Liebefeld Hackathon (CHF 3,500)",
+      issuer: "Hack Apertus & University of Bern / sprintd",
+      date: "Oct 2026",
+      description: "Built 'ArchAI' in under 48 hours – an end-to-end pipeline turning Swiss historical archives into AI-ready, provenance-preserving datasets using Switzerland's open-source Apertus 1.5 model. Won CHF 3,500 prize in the Education category."
+    },
+    {
       id: "tesla-challenge",
       highlight: "1st Place",
       category: "Tesla Challenge",
@@ -338,6 +348,22 @@ export const portfolioDataEn: PortfolioData = {
     { name: "Hindi", level: "Native" }
   ],
   blogPosts: [
+    {
+      id: "hack-apertus",
+      title: "1st Place at Hack Apertus Liebefeld Hackathon – ArchAI: Swiss Historical Archives Meets AI",
+      date: "October 2026",
+      readTime: "4 min read",
+      category: "Hackathon & Innovation",
+      excerpt: "From raw historical archives to an interactive, cited AI platform in under 48 hours. Our team won 1st place at the Hack Apertus On-site Hackathon in Liebefeld, tackling the University of Bern challenge with ArchAI.",
+      content: "From raw historical archives to an interactive, cited AI platform in under 48 hours. 🏆\n\nTaking 1st place at the Hack Apertus On-site Hackathon in Liebefeld was an incredible ride! Our team set out to tackle the University of Bern challenge of deciphering Swiss historical archives using Switzerland's open-source Apertus 1.5 model.\n\nThe result? ArchAI — an end-to-end, reproducible pipeline that turns centuries of raw archival documents into AI-ready, provenance-preserving datasets.\n\n🔧 What We Built (ArchAI):\nArchAI ingests three open Swiss archive datasets into a unified knowledge base, serving actionable insights through a cited Q&A interface.\n• Deterministic Reliability: Heavy-duty parsing, structural hygiene, and deterministic validation handle the raw data and keep output citable.\n• Apertus 1.5 Intelligence: Leveraged for automated metadata enrichment, titling, and bias-aware preprocessing.\n• Interactive Learning: To make historical exploration fun and accessible, we also built archive-based mini-games — huge credit to Dhruv Mulay for that brilliant idea!\n\n👥 The Team Behind the Win:\nBringing together expertise across academia, industry, research, and data was the true key to making this work:\n• Dhruv Mulay: Thanks for your technical expertise — I learned so much about agentic AI working alongside you!\n• Philipp Baumann: Your corporate and data background brought a crucial strategic perspective to our product.\n• Jorgo Ananiadis: Your deep knowledge of the Swiss system and business impact analysis grounded our entire pitch.\n• Kirtan Padh: Coming from data science, your mastery of structuring and presenting our solution kept us clear and focused.\n\nA huge thank you to the Hack Apertus team for building such an impressive open model, and to sprintd for providing an exceptional platform for hackers! Special thanks to Corina Masanti for giving us a clear understanding of the problem statement.\n\n👉 Check out our project: https://lnkd.in/esiMcSuT\n\nNext stop: St. Gallen for the Main Hack Apertus Award in May 2027! 🇨🇭✨\n#HackApertus #OpenData #AI #SwissFederalArchives #ArchAI #Innovation #Teamwork",
+      imageUrl: "/Portfolio/blog/apertus_1.webp",
+      galleryImages: [
+        "/Portfolio/blog/apertus_2.jpg",
+        "/Portfolio/blog/apertus_3.jpg",
+        "/Portfolio/blog/apertus_4.jpg",
+        "/Portfolio/blog/apertus_5.jpg"
+      ]
+    },
     {
       id: "tesla-challenge",
       title: "1st Place in the Tesla Challenge at Business Meets Tech (WHU)",
@@ -550,6 +576,15 @@ export const portfolioDataDe: PortfolioData = {
   ],
   achievements: [
     {
+      id: "hack-apertus",
+      highlight: "1. Platz",
+      category: "Hack Apertus",
+      title: "1. Platz – Hack Apertus Liebefeld Hackathon (CHF 3.500)",
+      issuer: "Hack Apertus & Universität Bern / sprintd",
+      date: "Okt 2026",
+      description: "Entwicklung von 'ArchAI' in unter 48 Stunden – eine End-to-End-Pipeline zur Umwandlung historischer Schweizer Archivdokumente in KI-bereite Datensätze mit dem Open-Source-Modell Apertus 1.5. Gewinner der Kategorie Bildung mit CHF 3.500 Preisgeld."
+    },
+    {
       id: "tesla-challenge",
       highlight: "1. Platz",
       category: "Tesla Challenge",
@@ -626,6 +661,22 @@ export const portfolioDataDe: PortfolioData = {
     { name: "Hindi", level: "Muttersprache" }
   ],
   blogPosts: [
+    {
+      id: "hack-apertus",
+      title: "1. Platz beim Hack Apertus Liebefeld Hackathon – ArchAI: Schweizer Historische Archive trifft KI",
+      date: "Oktober 2026",
+      readTime: "4 Min. Lesezeit",
+      category: "Hackathon & Innovation",
+      excerpt: "Von rohen historischen Archiven zu einer interaktiven, zitierten KI-Plattform in unter 48 Stunden. Unser Team gewann den 1. Platz beim Hack Apertus On-site Hackathon in Liebefeld.",
+      content: "Von rohen historischen Archiven zu einer interaktiven, zitierten KI-Plattform in unter 48 Stunden. 🏆\n\nDen 1. Platz beim Hack Apertus On-site Hackathon in Liebefeld zu belegen, war ein unglaubliches Erlebnis! Unser Team hat die Herausforderung der Universität Bern angenommen, historische Schweizer Archive mithilfe des Schweizer Open-Source-Modells Apertus 1.5 zu entschlüsseln.\n\nDas Ergebnis? ArchAI – eine end-to-end, reproduzierbare Pipeline, die Jahrhunderte roher Archivdokumente in KI-bereite, provenienzerhaltende Datensätze umwandelt.\n\n🔧 Was wir gebaut haben (ArchAI):\nArchAI fügt drei offene Schweizer Archivdatensätze in eine einheitliche Wissensbasis ein und liefert umsetzbare Einblicke über ein zitiertes Q&A-Interface.\n• Deterministische Zuverlässigkeit: Robustes Parsing und deterministische Validierung machen die Ausgabe zitierbar.\n• Apertus 1.5 Intelligenz: Für automatische Metadaten-Anreicherung, Titelvergabe und vorurteilsawarenes Preprocessing eingesetzt.\n• Interaktives Lernen: Um die historische Erkundung spielerisch und zugänglich zu machen, haben wir auch archivbasierte Mini-Spiele entwickelt – ein besonderer Dank an Dhruv Mulay für diese brillante Idee!\n\n👥 Das Team hinter dem Sieg:\n• Dhruv Mulay: Danke für dein technisches Fachwissen – ich habe so viel über agentische KI gelernt!\n• Philipp Baumann: Dein unternehmerischer Hintergrund brachte eine entscheidende strategische Perspektive.\n• Jorgo Ananiadis: Dein tiefes Wissen über das Schweizer System und die Geschäftsauswirkungsanalyse hat unsere Präsentation fundiert.\n• Kirtan Padh: Deine Fähigkeit, unsere Lösung klar zu strukturieren und zu präsentieren, hat uns fokussiert gehalten.\n\nVielen Dank an das Hack Apertus Team für das beeindruckende Open-Source-Modell, an sprintd für die exzellente Plattform und an Corina Masanti für die klare Problemstellung.\n\n👉 Projekt ansehen: https://lnkd.in/esiMcSuT\n\nNächste Station: St. Gallen für den Hauptpreis des Hack Apertus im Mai 2027! 🇨🇭✨\n#HackApertus #OpenData #AI #SwissFederalArchives #ArchAI #Innovation #Teamwork",
+      imageUrl: "/Portfolio/blog/apertus_1.webp",
+      galleryImages: [
+        "/Portfolio/blog/apertus_2.jpg",
+        "/Portfolio/blog/apertus_3.jpg",
+        "/Portfolio/blog/apertus_4.jpg",
+        "/Portfolio/blog/apertus_5.jpg"
+      ]
+    },
     {
       id: "tesla-challenge",
       title: "1. Platz bei der Tesla Challenge auf der Business Meets Tech (WHU)",
